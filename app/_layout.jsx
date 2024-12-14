@@ -42,9 +42,19 @@ export default function RootLayout() {
           title: "index screen",
           headerShown: false
         }}/>
-        <Stack.Screen name="profile"  options={{
-          title: "profile screen",
+        <Stack.Screen name="(auth)"  options={{
+          title: "auth screen",
+          headerShown: false
         }}/>
+        <Stack.Screen name="(tabs)"  options={{
+          title: "tabs screen",
+          headerShown: false
+        }}/>
+        <Stack.Screen name="/search/[query]"  options={{
+          title: "search screen",
+          headerShown: false
+        }}/>
+        
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
